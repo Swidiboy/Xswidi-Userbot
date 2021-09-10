@@ -1,6 +1,6 @@
 """ Userbot initialization. """
 
-# Ported By Sendi
+# Ported By Putra
 
 import logging
 import os
@@ -111,9 +111,9 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/SendiAp/Rose-Userbot")
+    "https://github.com/Swidiboy/Xswidi-Userbot")
 UPSTREAM_REPO_BRANCH = os.environ.get(
-    "UPSTREAM_REPO_BRANCH", "Rose-Userbot")
+    "UPSTREAM_REPO_BRANCH", "Xswidi-Userbot")
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -226,19 +226,19 @@ WELCOME_PIC = os.environ.get(
     "WELCOME_PIC") or "https://telegra.ph/file/be04a599afd4a1a3fa934.mp4"
 
 # Default emoji help
-EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🌹"
+EMOJI_HELP = os.environ.get("EMOJI_HELP") or "🦸"
 
 # Link bot helpme
-BOT_USERYOU = os.environ.get("BOT_USERYOU") or "t.me/rose_01_bot"
+BOT_USERYOU = os.environ.get("BOT_USERYOU") or "t.me/Swidi_bot"
 
 # Default .alive Instagram
-IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/ndiap04"
+IG_ALIVE = os.environ.get("IG_ALIVE") or "instagram.com/Mputramndla_"
 
-# °ROSE-USERBOT°
-OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/pikyus1"
+# °Xswidi-Userbot°
+OWNER_URL = os.environ.get("OWNER_URL") or "https://t.me/Xficxe"
 
-# °ROSE-USERBOT°
-CHANNEL_URL = os.environ.get("CHANNEL_URL") or "https://t.me/fckyoupeople1"
+# °Xswidi-Userbot°
+GROUP_URL = os.environ.get("GROUP_URL") or "https://t.me/Tongkrongan_Onlin"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -380,7 +380,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "**Rσʂҽ UʂҽɾႦσƚ Bҽɾԋαʂιʅ Dιαƙƚιϝƙαɳ🌹**\n━━━━━━━━━━━━━━━\n❃ **Branch :** `Rose-Userbot`\n❃ **BotVer :** `5.0`\n━━━━━━━━━━━━━━━\n❃ **Support :** @Rose_Userbot\n━━━━━━━━━━━━━━━")
+    await bot.send_message(BOTLOG_CHATID, "**Xswidi UʂҽɾႦσƚ Bҽɾԋαʂιʅ Dιαƙƚιϝƙαɳ🌹**\n━━━━━━━━━━━━━━━\n❃ **Branch :** `Rose-Userbot`\n❃ **BotVer :** `5.0`\n━━━━━━━━━━━━━━━\n❃ **Support :** @Tongkrongan_Onlin\n━━━━━━━━━━━━━━━")
     return
 
 with bot:
@@ -480,8 +480,8 @@ with bot:
                     f"➠ **Atau** Kalian Bisa Klik /notes Dibawah Jika Ada\n",
                     buttons=[
                         [
-                            Button.url("【﻿Ｃｈａｎｎｅｌ】",
-                                       "https://t.me/fckyoupeople1")],
+                            Button.url("【﻿Group】",
+                                       "https://t.me/Tongkrongan_Onlin")],
                     ]
                 )
 
@@ -507,7 +507,7 @@ with bot:
         @ tgbot.on(events.CallbackQuery(data=b"start"))
         async def starte(event):
             text = (
-                f"Join Groups Support @Rose_Userbot")
+                f"Join Groups Support @Tongkrongan_Onlin")
             await event.edit(
                 text,
                 link_preview=True,
@@ -546,15 +546,15 @@ with bot:
             if event.message.from_id != uid:
                 await event.client.get_entity(event.chat_id)
                 await event.reply(
-                    f"👹♗  Ř𝓞ˢᵉ υşέ𝕣ᗷ𝑜т  💎🐤\n",
+                    f"👹♗  Xswidi-Userbot\n",
                     buttons=[
                         [
                             Button.url("ʀᴇᴘᴏ",
-                                       "https://github.com/SendiAp/Rose-Userbot"),
+                                       "https://github.com/Swidiboy/Xswidi-Userbot"),
                             Button.url("ʟɪᴄᴇɴꜱᴇ",
-                                       "https://github.com/SendiAp/Rose-Userbot/blob/Rose-Userbot/LICENSE")],
+                                       "https://github.com/Swidiboy/Xswidi-Userbot/blob/Xswidi-Userbot/LICENSE")],
                         [Button.url("ɢʀᴏᴜᴘꜱ",
-                                    "t.me/Rose_Userbot")],
+                                    "t.me/Tongkrongan_Onlin")],
                     ]
                 )
 
@@ -568,9 +568,9 @@ with bot:
         async def on_plug_in_callback_query_handler(event):
             if event.query.user_id == uid:
                 buttons = paginate_help(0, dugmeler, "helpme")
-                text = f"🌹འօʂҽ-Աʂҽɾҍօէ🌹\n\n**🅼🅰🅸🅽 🅼🅴🅽🆄**\n\n❥ **Bᴏᴛ Oғ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)} "
+                text = f"🦸Xswidi-Userbot🦸\n\n**🅼🅰🅸🅽 🅼🅴🅽🆄**\n\n❥ **Bᴏᴛ Oғ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)} "
                 await event.edit(text,
-                                 file=roselogo,
+                                 file=Xswidilogo,
                                  buttons=buttons,
                                  link_preview=False,
                                  )
@@ -587,7 +587,7 @@ with bot:
             current_page_number = int(lockpage)
             buttons = paginate_help(current_page_number, plugins, "helpme")
             await event.edit(
-                file=roselogo,
+                file=Xswidilogo,
                 buttons=buttons,
                 link_preview=False,
             )
@@ -609,7 +609,7 @@ with bot:
                     f"Menu {DEFAULTUSER} :")
                 await event.edit(
                     text,
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -627,7 +627,7 @@ with bot:
                 reply_pop_up_alert = f"❌ DISCLAIMER ❌\n\nHanya {DEFAULTUSER}Yang Bisa Menekan Tombol Ini, Deploy Rose Userbot Untuk Mengetahui Fitur Nya."
                 await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
-# ====================================RoseUserbot===================================== #
+# ====================================XswidiUserbot===================================== #
 
         @ tgbot.on(
             events.callbackquery.CallbackQuery(  # pylint:disable=E0602
@@ -640,7 +640,7 @@ with bot:
                     f"{DEFAULTUSER}Ada Beberapa Vars Yang Tersembunyi, Silakan Cek Dibawah Untuk Mengetahui Nya.")
                 await event.edit(
                     text,
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -672,10 +672,10 @@ with bot:
                     f"__Kamu Dapat Mengubah Pesan Welcome Ketika Start Dibot.__\n\n"
                     f"✘ **SetVars :**\n"
                     f"`.set var WELCOME PIC` <link>\n"
-                    f"© @Rose_Userbot")
+                    f"© @Tongkrongan_Onlin")
                 await event.edit(
                     text,
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -699,10 +699,10 @@ with bot:
                     f"__Kamu Dapat Mengubah Pesan Ditombol, Kalau Kamu Belum Mengetahui Nya, Silakan start Bot, Klik Tombol Info, Disitu Ada Tulisan Pesan.__\n\n"
                     f"✘ **SetVars :**\n"
                     f"`.set var PESAN_INFO` <teks>\n"
-                    f"© @Rose_Userbot")
+                    f"© @Tongkrongan_Onlin")
                 await event.edit(
                     text,
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -727,7 +727,7 @@ with bot:
                     f"{DEFAULTUSER}Pilih dari opsi di bawah ini :")
                 await event.edit(
                     text,
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=True,
                     buttons=[
                         [custom.Button.inline("ᴜᴘᴅᴀᴛᴇ", data="pembaruan")],
@@ -761,7 +761,7 @@ with bot:
                     f"✘ **SetVars :**\n"
                     f"`.set var ALIVE_LOGO` <link>\n"
                     f"`.set var ROSE_TEKS_KUSTOM` <teks>\n\n"
-                    f"© @Rose_Userbot")
+                    f"© @Tongkrongan_Onlin")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -796,7 +796,7 @@ with bot:
                     f"`.set pm_msg`  <teks>\n\n"
                     f"✘ **SetVars :**\n"
                     f"`.set var PM_AUTO_BAN True`\n\n"
-                    f"© @Rose_Userbot")
+                    f"© @Tongkrongan_Onlin")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -832,7 +832,7 @@ with bot:
                     f"✘ **SetVars :**\n"
                     f"`.set var INLINE_PIC` <link>\n"
                     f"`.set var EMOJI_HELP` <emoji>\n\n"
-                    f"© @Rose_Userbot")
+                    f"© @Tongkrongan_Onlin")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -865,7 +865,7 @@ with bot:
                     f"__Diusahakan Untuk Update Deploy, Jangan Update Now, Agar Bisa Mengatahui Update Terbaru Nya.__\n\n"
                     f"✘ **Command :**\n"
                     f"`.update deploy`\n\n"
-                    f"© @Rose_Userbot")
+                    f"© @Tongkrongan_Onlin")
                 await event.edit(
                     text,
                     file=roselogo,
@@ -920,14 +920,14 @@ with bot:
                     f"┏━━━━━━━━━━━━━━━━━━━━━\n"
                     f"┣ **Pemilik** - `{DEFAULTUSER}`\n"
                     f"┣ **Versi** - `5.0`\n"
-                    f"┣ **Groups** - @Rose_Userbot\n"
+                    f"┣ **Groups** - @Tongkrongan_Onlin\n"
                     f"┣ **Bahasa** - `Python`\n"
-                    f"┣ **Branch** - `Rose-Userbot`\n"
+                    f"┣ **Branch** - `Xswidi-Userbot`\n"
                     f"┣ **Modules** - `170`\n"
                     f"┗━━━━━━━━━━━━━━━━━━━━━")
                 await event.edit(
                     text,
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -953,7 +953,7 @@ with bot:
                     f"**PONG!!**\n `{ms}ms`")
                 await event.edit(
                     text,
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -978,7 +978,7 @@ with bot:
                     f"/ping - **Mengecek Sinyal Bot**")
                 await event.edit(
                     text,
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=True,
                     buttons=[
                         [custom.Button.inline("ʙᴀᴄᴋ", data="menu")],
@@ -1001,7 +1001,7 @@ with bot:
                     f"Closed Menu!")
                 await event.edit(
                     text,
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=True,
                     buttons=[
                         [
@@ -1021,34 +1021,34 @@ with bot:
                     "@RoseUserbot"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=False,
-                    text=f"🌹འօʂҽ-Աʂҽɾҍօէ🌹\n\n**🅼🅰🅸🅽 🅼🅴🅽🆄**\n\n❥ **Bᴏᴛ Oғ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}".format(
+                    text=f"🦸Xswidi-Userbot🦸\n\n**🅼🅰🅸🅽 🅼🅴🅽🆄**\n\n❥ **Bᴏᴛ Oғ :** {DEFAULTUSER}\n❥ **ʙᴏᴛ ᴠᴇʀ :** 5.0\n❥ **ᴍᴏᴅᴜʟᴇꜱ :** {len(plugins)}".format(
                         len(dugmeler),
                     ),
                     buttons=buttons,
                 )
             elif query.startswith("tb_btn"):
                 result = builder.article(
-                    "Bantuan Dari 🌹འօʂҽ-Աʂҽɾҍօէ🌹 ",
+                    "Bantuan Dari 🦸Xswidi-Userbot🦸 ",
                     text="Daftar Plugins",
                     buttons=[],
                     link_preview=True)
             else:
                 result = builder.article(
-                    " 🌹འօʂҽ-Աʂҽɾҍօէ🌹 ",
-                    text="""°ROSE-USERBOT°""",
+                    " 🦸Xswidi-Userbot🦸 ",
+                    text="""°Xswidi-Userbot°""",
                     buttons=[
                         [
                             custom.Button.url(
-                                "ROSE",
-                                "https://github.com/SendiAp/Rose-Userbot"),
+                                "Xswidi",
+                                "https://github.com/Swidiboy/Xswidi-Userbot"),
                             custom.Button.url(
                                 "SUPPORT",
-                                "t.me/Rose_Userbot")],
+                                "t.me/Tongkrongan_onlin")],
                         [custom.Button.url(
                             "LICENSE",
-                            "https://github.com/SendiAp/Rose-Userbot/blob/Rose-Userbot/LICENSE")],
+                            "https://github.com/Swidiboy/Xswidi-Userbot/blob/Xswidi-Userbot/LICENSE")],
                     ],
                     link_preview=False,
                 )
@@ -1080,14 +1080,14 @@ with bot:
             if event.query.user_id == uid:  # userbot
                 # https://t.me/TelethonChat/115200
                 await event.edit(
-                    file=roselogo,
+                    file=Xswidilogo,
                     link_preview=True,
                     buttons=[
                         [
                             Button.url(f"{EMOJI_HELP} ɢʀᴏᴜᴘꜱ {EMOJI_HELP} ",
-                                       "t.me/Rose_Userbot"),
+                                       "t.me/Tongkrongan_Onlin"),
                             Button.url(f"{EMOJI_HELP} ᴄʜᴀɴɴᴇʟ {EMOJI_HELP} ",
-                                       "t.me/fckyoupeople1")],
+                                       "t.me/Xficxe")],
                         [Button.url(f"{EMOJI_HELP} ꜱᴇᴛᴛɪɴɢꜱ {EMOJI_HELP} ",
                                     f"{BOT_USERYOU}"),
                             Button.url(f"{EMOJI_HELP} ɪɴꜱᴛᴀɢʀᴀᴍ {EMOJI_HELP} ",
@@ -1102,7 +1102,7 @@ with bot:
         @ tgbot.on(events.CallbackQuery(data=b"info_random"))
         async def start(event):
             text = (
-                f"**Owner** : {DEFAULTUSER}\n**Emoji** : {EMOJI_HELP}\n\n💌**Pesan** :\n{PESAN_INFO}\n\n**Powered By** : @Rose_Userbot")
+                f"**Owner** : {DEFAULTUSER}\n**Emoji** : {EMOJI_HELP}\n\n💌**Pesan** :\n{PESAN_INFO}\n\n**Powered By** : @Tongkrongan_Onlin")
             await event.edit(
                 text,
                 link_preview=True,
